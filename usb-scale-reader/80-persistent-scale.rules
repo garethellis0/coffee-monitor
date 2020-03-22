@@ -1,0 +1,2 @@
+KERNEL=="hidraw*", ATTRS{manufacturer}=="DYMO", SYMLINK+="scale"
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="plugdev"
