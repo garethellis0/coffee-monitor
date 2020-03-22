@@ -36,7 +36,6 @@ app.layout = html.Div([
 @app.callback(Output('my-graph', 'figure'),  [Input('dropdown', 'value')])
 def update_graph(dropdown_value):
     df = pandas.read_csv("data.csv")
-    print(df)
     #df = web.DataReader(
     #    selected_dropdown_value,
     #    'google',
@@ -54,4 +53,4 @@ def update_graph(dropdown_value):
 app.css.append_css({'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'})
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(port=80, host='0.0.0.0')
