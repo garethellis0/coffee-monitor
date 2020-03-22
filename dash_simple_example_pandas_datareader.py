@@ -9,6 +9,7 @@ from datetime import datetime as dt
 app = dash.Dash('Hello World')
 
 app.layout = html.Div([
+    html.H1("How Much Coffee Is Left?")
     #dcc.Dropdown(
     #    id='my-dropdown',
     #    options=[
@@ -18,7 +19,6 @@ app.layout = html.Div([
     #    ],
     #    value='COKE'
     #),
-
     dcc.Dropdown(id='dropdown'),
     dcc.Graph(
         id='my-graph',
