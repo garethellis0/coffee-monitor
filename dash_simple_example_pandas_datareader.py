@@ -9,7 +9,7 @@ from datetime import datetime as dt
 app = dash.Dash('Hello World')
 
 app.layout = html.Div([
-    html.H1("How Much Coffee Is Left?")
+    html.H1("How Much Coffee Is Left?"),
     #dcc.Dropdown(
     #    id='my-dropdown',
     #    options=[
